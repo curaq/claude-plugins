@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "curaq",
+  "displayName": "CuraQ",
+  "version": "0.1.0",
+  "description": "CuraQ（AI記事キュレーション）公式プラグイン。記事のおすすめ・今週の学び・おすすめ書籍をチャットで",
+  "author": {
+    "name": "CuraQ"
+  },
+  "homepage": "https://curaq.app",
+  "repository": "https://github.com/curaq/claude-plugins",
+  "license": "MIT",
+  "keywords": ["articles", "curation", "reading", "ai"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "userConfig": {
+    "api_token": {
+      "type": "string",
+      "title": "CuraQ API Token",
+      "description": "CuraQの設定画面（https://curaq.app/settings/access-token）で発行したアクセストークン",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

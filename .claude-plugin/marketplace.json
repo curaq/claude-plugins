@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "curaq",
+  "owner": {
+    "name": "CuraQ"
+  },
+  "description": "CuraQ公式プラグイン — AI記事キュレーションをターミナルから",
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "curaq",
+      "displayName": "CuraQ",
+      "source": "./plugins/curaq",
+      "description": "CuraQのリモートMCPに接続し、記事のおすすめ・今週の学び・おすすめ書籍をターミナルで利用できます",
+      "category": "productivity",
+      "keywords": ["articles", "curation", "reading", "ai"],
+      "homepage": "https://curaq.app"
+    }
+  ]
+}
