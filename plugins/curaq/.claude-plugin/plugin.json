@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "curaq",
   "displayName": "CuraQ",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CuraQ（AI記事キュレーション）公式プラグイン。記事のおすすめ・今週の学び・おすすめ書籍をチャットで",
   "author": {
     "name": "CuraQ"
