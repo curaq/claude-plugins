@@ -17,6 +17,15 @@
       "category": "productivity",
       "keywords": ["articles", "curation", "reading", "ai"],
       "homepage": "https://curaq.app"
+    },
+    {
+      "name": "curaq-view",
+      "displayName": "CuraQ View (PoC)",
+      "source": "./plugins/curaq-view",
+      "description": "PoC: CuraQ MCPの記事検索結果をClaude Code内にCuraQ Viewとして描画する（function hooks / Claude Mods）。データ取得はcuraqプラグインのRemote MCPに委ね、このプラグインは表示のみを担当する",
+      "category": "productivity",
+      "keywords": ["articles", "curation", "ui", "poc"],
+      "homepage": "https://curaq.app"
     }
   ]
 }
