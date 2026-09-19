@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "curaq-view",
+  "displayName": "CuraQ View (PoC)",
+  "version": "0.0.1",
+  "description": "PoC: CuraQ MCPの記事検索結果をClaude Code内にCuraQ Viewとして描画する（function hooks / Claude Mods）。データ取得はcuraqプラグインのRemote MCPに委ね、このプラグインは表示のみを担当する",
+  "author": { "name": "CuraQ" },
+  "homepage": "https://curaq.app",
+  "repository": "https://github.com/curaq/claude-plugins",
+  "license": "MIT",
+  "keywords": ["articles", "curation", "ui", "poc"]
+}

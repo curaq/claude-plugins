@@ -1,0 +1,4 @@
+{
+  "description": "CuraQ View PoC: function hooks module (Claude Mods)",
+  "modules": ["./curaq-view.tsx"]
+}
