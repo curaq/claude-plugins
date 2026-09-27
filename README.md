@@ -10,9 +10,18 @@
 /plugin install curaq@curaq
 ```
 
-インストール時に **CuraQ API Token** の入力を求められます。
-トークンは [CuraQの設定画面](https://curaq.app/settings/access-token) で発行できます
-（要CuraQアカウント）。
+インストール後、Claude Code で `/mcp` → `plugin:curaq:curaq` → Authenticate を選ぶと
+ブラウザでCuraQの同意画面が開きます（要CuraQアカウント）。許可すると接続されます。
+接続中のAIは [CuraQの設定画面](https://curaq.app/settings/access-token) で確認・解除できます。
+
+### トークン方式で接続する場合
+
+OAuthを使わずにアクセストークンで接続することもできます。
+[CuraQの設定画面](https://curaq.app/settings/access-token) でトークンを発行し、次を実行してください。
+
+```
+claude mcp add --transport http curaq https://curaq.app/api/v1/mcp --header "Authorization: Bearer <発行したトークン>"
+```
 
 ## 使い方
 
@@ -23,7 +32,8 @@
 | `/curaq:recommend-books` | 読書傾向に基づく書籍レコメンド（週1生成） |
 
 スキルを使わずに「CuraQに保存して」「保存した記事を検索して」のように話しかけても、
-接続されたMCPツール（記事の保存・検索・discovery等 計15ツール）が利用できます。
+接続されたMCPツール（記事・ノートの検索、記事の保存、discovery等）が利用できます。
+OAuth接続では記事の削除など削除系のツールは提供されません。
 
 ## 仕組み
 
