@@ -2,10 +2,7 @@
   "mcpServers": {
     "curaq": {
       "type": "http",
-      "url": "https://curaq.app/api/v1/mcp",
-      "headers": {
-        "Authorization": "Bearer ${user_config.api_token}"
-      }
+      "url": "https://curaq.app/api/v1/mcp"
     }
   }
 }
